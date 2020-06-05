@@ -14,7 +14,7 @@
 	<a href="/resources/html/login.html">LOGIN</a>
 	<a href="/memJoinOK.jsp">memJoinOK</a>
 	<a href="/memLoginOK.jsp">memLoginOK</a><br>
-	<a href="/bbs">Let's go BBS</a><br>
+	<a href="/bbs">Let's go BBS //Board System</a><br>
              
 </body>
 </html>
