@@ -11,10 +11,8 @@ import com.test.yp.dao.bbs_Dao;
 public class bbs_Service {
 	@Autowired
 	bbs_Dao dao;
-	public List<postVO> getList(int firstIndex,int count) {
-		return dao.getList(firstIndex, count);
+	public List<postVO> getList() {
+		return dao.getList();
 	}
-	public String filter(String ip) {
-		return ip+"i'm  done";
-	}
+
 }

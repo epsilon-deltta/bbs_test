@@ -12,7 +12,7 @@ public class bbs_Dao {
     @Autowired
     private SqlSession SqlSession;
     
-    public List<postVO> getList(int firstIndex,int count){
+    public List<postVO> getList(){
           return SqlSession.selectList("test.mappers.testMapper"+".listall");
     }
 

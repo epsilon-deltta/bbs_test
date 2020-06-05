@@ -22,17 +22,11 @@ public class bbs_homeController {
 	
 	@RequestMapping(value = "/bbs", method = RequestMethod.GET)
 	public String home(Locale locale, Model model,HttpServletRequest request) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("come in bbs {}.", locale);
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		String formattedDate = dateFormat.format(date);
-		String page = request.getParameter("page");
+//		String page = request.getParameter("page");
 		
-		model.addAttribute("filename", "//");
-		model.addAttribute("serverTime", formattedDate);
-		model.addAttribute("page", service.filter(page));
-		model.addAttribute("list",service.getList(0, 10));
+		model.addAttribute("list",service.getList());
 		
 		
 		return "bbs_Home";
