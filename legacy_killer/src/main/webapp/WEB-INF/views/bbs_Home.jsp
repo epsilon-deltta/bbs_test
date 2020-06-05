@@ -14,8 +14,9 @@
   <td>${list.writer}</td>
   <td>${list.context}</td>
   <td>${list.date}</td>
-  <td>${list.title}</td><br>
+  <td>${list.title}</td>
  </tr>
+ <br>
 </c:forEach>
 </body>
 </html>
