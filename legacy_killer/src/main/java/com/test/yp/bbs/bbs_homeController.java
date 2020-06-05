@@ -20,7 +20,7 @@ public class bbs_homeController {
 	
 	@RequestMapping(value = "/bbs", method = RequestMethod.GET)
 	public String home(Locale locale, Model model,HttpServletRequest request) {
-		logger.info("come in bbs {}.", locale);
+		logger.info("bbs_homeController");
 		
 //		String page = request.getParameter("page");
 		
