@@ -8,7 +8,7 @@
 	<h1>
 		Thank you for coming ! <b>GroundK bro</b>
 	</h1>
-
+	<a href="/resources/html/index.html">index _ click</a>
 	<P>The time on the server is ${serverTime}.</P>
 	
 	<br>

@@ -16,10 +16,17 @@ public class bbs_Dao {
 	private static final Logger logger = LoggerFactory.getLogger(bbs_Dao.class);
 	@Autowired
 	private SqlSession SqlSession;
+//	@Autowired
+//	postVO vo;
 
 	public List<postVO> getList() {
 		logger.info("bbs_Dao");
 		return SqlSession.selectList("test.mappers.testMapper" + ".listall");
 	}
+//	public List<postVO> getPost_by_id(String id) {
+//		vo.id = Integer.parseInt(id);
+//		System.out.println(vo.id);
+//		return SqlSession.selectList("test.mappers.testMapper" + ".selectOne",vo);
+//	}
 
 }

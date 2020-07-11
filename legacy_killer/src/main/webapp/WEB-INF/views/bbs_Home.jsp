@@ -8,10 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:forEach items="${list}" var="list">
+<%  
+int i=0;
+%>
+	<c:forEach items="${list}" var="list" varStatus="status">
 		<a href="/bbs/post?id=${list.id}">
 			<div style="background-color: silver;">
-				<span style="font-size: xx-large">${list.id}.</span> <b
+				<span style="font-size: xx-large">${status.count}.</span> <b
 					style="font-size: xx-large;">${list.title}</b> ${list.writer}
 				:${list.date} <br>
 				<p>
@@ -19,6 +22,7 @@
 				</p>
 			</div>
 		</a>
+	
 	</c:forEach>
 </body>
 </html>

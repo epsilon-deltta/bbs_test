@@ -18,5 +18,9 @@ public class bbs_Service {
 		logger.info("bbs_Service");
 		return dao.getList();
 	}
+//	public List<postVO> getPost(String id) {
+//		logger.info("bbs_Service");
+//		return dao.getPost_by_id(id);
+//	}
 
 }
